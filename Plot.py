@@ -61,7 +61,6 @@ history = model.fit(X_train, y_train, validation_data=(
 
 train_predict = model.predict(X_train)
 test_predict = model.predict(X_test)
-# train_predict.shape, test_predict.shape
 
 train_predict = scaler.inverse_transform(train_predict)
 test_predict = scaler.inverse_transform(test_predict)
