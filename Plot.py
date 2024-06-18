@@ -15,6 +15,7 @@ st.set_page_config(
     page_icon="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=032"
 )
 
+
 st.title("Ethereum Predicted Price")
 st.write("Welcome to our Ethereum Price Prediction page, where we leverage advanced machine learning models to forecast future prices of Ethereum. Utilizing historical data and sophisticated algorithms, we provide an interactive and visually engaging representation of predicted Ethereum prices.")
 
@@ -22,7 +23,7 @@ maindf = pd.read_csv('ETH-USD.csv')
 
 closedf = maindf[['Date', 'Close']]
 
-closedf = closedf[closedf['Date'] > '2021-05-26']
+closedf = closedf[closedf['Date'] > '2021-06-19']
 close_ethereum = closedf.copy()
 
 del closedf['Date']
